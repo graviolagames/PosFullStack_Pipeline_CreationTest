@@ -3,10 +3,11 @@ name: conchayoro-pipeline
 on:
   push:
     branches: ["main"]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - name: execute command
-      run: echo "Pipeline initial configuration"
+        run: echo "Pipeline initial configuration"
       
