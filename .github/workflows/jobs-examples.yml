@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: create an artifact for reuse (changed again)
+      - name: create an artifact for reuse (changed again and again)
         run: echo "Full featured artifact" > build-result.txt
       - uses: actions/upload-artifact@v2
         with: 
