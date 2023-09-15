@@ -1,0 +1,19 @@
+name: steps examples
+on:
+  push:
+    branches: ["main"]
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v2
+
+      - name: Configuração do Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Verificação da versão do Node.js
+        run: node --version
