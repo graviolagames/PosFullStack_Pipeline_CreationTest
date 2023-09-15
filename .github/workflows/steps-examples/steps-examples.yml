@@ -1,11 +1,10 @@
 name: steps examples
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 jobs:
   jobx:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout do código
         uses: actions/checkout@v2
